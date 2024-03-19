@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 3</title>
+</head>
+
+<style>
+
+    nav{
+        top:0;
+        right:0;
+        position:fixed;
+        background:#2c3e50;
+    }
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: #fff;
+  background-color: #333;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-image: url(https://images.unsplash.com/photo-1682685797366-715d29e33f9d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+    
+    footer {
+      margin-top: auto;
+      background-color: #ccd9e6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .animate {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  background-color: lightblue;
+  transition: transform 0.5s ease;
+}
+
+.animate:hover {
+  transform: scale(1.5);
+}
+
+    </style>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+    </nav>
+
+    <header>
+        <h1>This is the header</h1>
+      </header>
+      
+      <main>
+        <p>This is the main content area.</p>
+        <p>It will expand to fill the available space.</p>
+      </main>
+
+      <div class="animate">hello, How are you?</div>
+      
+      
+    <h1 style="color:blue;margin-left:20px;">This is a heading</h1>
+
+    <p style="color:red;">This is a paragraph.</p>
+
+    <footer>
+        <p>This  is the footer of the page.</p>
+    </footer>
+
+</body>
+</html>

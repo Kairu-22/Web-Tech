@@ -1,0 +1,51 @@
+<!-- 2.	Create a HTML form for a student for course registration which should have following fields:
+1.	Student Name (textbox)
+2.	Age (textbox with numbers only)
+3.	Date of Birth (Calendar)
+4.	Select Course (Drop Down)
+5.	Submit (Button) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" type="text/css" href="student_form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="">
+            <table>
+                <h1>Student Form</h1>
+                <tr>
+                    <td>Username </td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Age </td>
+                    <td><input type="number" name="age"></td>
+                </tr>
+                <tr>
+                    <td>Date of birth </td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="course">Select Course </label></td>
+                    <td><select name="course" id="course">
+                        <option value="none"></option>
+                        <option value="btech">Bachelors of Technology</option>
+                        <option value="bdes">Bachelors of Desgin</option>
+                        <option value="bl">Bachelor of Law</option>
+                        <option value="bba">Bachelor  of Business Administration</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="alert('form is submitted')" value="Submit!"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+
+        h1 {
+            color: #3b5998;
+            font-size: 48px;
+            margin: 50px auto 30px;
+            text-align: center;
+            text-shadow: 2px 2px #dfe3ee;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 50px auto;
+            width: 100%;
+            box-shadow: 0px 0px 20px 0px #d3d3d3;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            color: #555;
+            font-size: 20px;
+        }
+
+        .monday {
+            background-color: #ffe0b2;
+        }
+
+        .tuesday {
+            background-color: #b2dfdb;
+        }
+
+        .wednesday {
+            background-color: #ffcc80;
+        }
+
+        .thursday {
+            background-color: #c5cae9;
+        }
+
+        .friday {
+            background-color: #ffcdd2;
+        }
+
+        /* Subject Colors */
+        .subject-sepm {
+            background-color: #ffcc99;
+        }
+
+        .subject-flat {
+            background-color: #a5d6a7;
+        }
+
+        .subject-devops {
+            background-color: #80cbc4;
+        }
+
+        .subject-adbms {
+            background-color: #ffecb3;
+        }
+
+        .subject-evs {
+            background-color: #b2ebf2;
+        }
+
+        .subject-webtech {
+            background-color: #ffab91;
+        }
+
+        .subject-edge {
+            background-color: #e0e0e0;
+        }
+
+        .subject-dt {
+            background-color: #f8bbd0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly Timetable</h1>
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>12:00-1:00</th>
+            <th>1:00-2:00</th>
+            <th>2:00-3:00</th>
+            <th>3:00-4:00</th>
+            <th>4:00-5:00</th>
+            <th>5:00-6:00</th>
+        </tr>
+        <tr class="monday">
+            <td>Monday</td>
+            <td colspan="2" class="subject-adbms">ADBMS LAB B9-CCC-04</td>
+            <td class="subject-flat">FLAT 11010</td>
+            <td colspan="1"></td>
+            <td class="subject-devops">DEVOPS AUTOMATION</td>
+            <td colspan="1"></td>
+            <td colspan="1"></td>
+        </tr>
+        <tr class="tuesday">
+            <td>Tuesday</td>
+            <td colspan="1"></td>
+            <td colspan="1"></td>
+            <td colspan="1"></td>
+            <td class="subject-adbms">SEPM 11112</td>
+            <td colspan="1"></td>
+            <td class="subject-webtech">Web Tech 11010</td>
+            <td colspan="2" class="subject-dt">Design Thinking (Virtual)</td>
+        </tr>
+        <tr class="wednesday">
+            <td>Wednesday</td>
+            <td colspan="2"class="subject-webtech">Web Tech 11010</td>
+            <td colspan="1"></td>
+            <td class="subject-adbms">ADBMS 11010</td>
+            <td class="subject-flat">FLAT 11010</td>
+            <td colspan="1"></td>
+            <td class="subject-edge">EDGE 11010</td>
+            <td class="subject-dt">Design Thinking (Virtual)</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="thursday">
+            <td>Thursday</td>
+            <td colspan="2" class="subject-sepm">SEPM lab</td>
+            <td class="subject-devops">devops automation 11010</td>
+            <td colspan="1"></td>
+            <td class="subject-webtech">Web Tech 11010</td>
+            <td colspan="2"></td>
+            <td colspan="2" class="subject-webtech">Web Tech Lab (CAD LAB-B)</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="friday">
+            <td>Friday</td>
+            <td colspan="2" class="subject-devops">devpos LAB B9-CCC-03</td>
+            <td class="subject-adbms">ADBMS 11010</td>
+            <td class="subject-flat">FLAT 11010</td>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>

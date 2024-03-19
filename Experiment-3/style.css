@@ -1,0 +1,147 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 150vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,  #02135a, #085d5d);
+    color:rgb(211,211,211);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;}
+
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    height: 50px;
+    width:100%;
+    background-color: rgb(66, 67, 67);
+    text-align: center;
+  }
+
+.container{
+    width: 100%;
+    height:500px;
+    perspective: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg) ;
+}
+
+h2{
+    color: #f4eceb; /* Coral text color for headings */
+    font-size: 36px;
+    margin-bottom: 20px;
+
+}
+
+.card{
+left:100px;
+height: 100%;
+float: left;
+width: 20%;
+padding: 5px;
+position: relative;
+transition: transform 1500ms;
+transform-style: preserve-3d;
+}
+
+
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-image: url(https://source.unsplash.com/random/350x500);
+}
+
+.back{
+    background-color: #3a3a3a;
+    transform:rotateY(180deg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height: 50px;
+    width:100%;
+    background-color: aliceblue;
+}

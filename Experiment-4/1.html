@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .d1{
+            float:left;
+            border:1px  solid black;
+            width: 50%;
+        }
+
+        .d2{
+            display: contents;
+        }
+
+        @media screen and (max-width:880px) {
+            body{
+            background-color: rgb(127, 187, 44);
+            font-size: 15px;
+            /* padding: 10px; */
+        }
+
+        .d1{
+            display:inline-block;
+            float: left;
+            border:1px  solid black;
+            width: 100%;
+        }
+
+        .d2{
+            display: hidden;
+        }
+        }
+    </style>
+</head>
+<body>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptate velit at itaque nam? Ipsam harum ex fuga, ea non praesentium sunt eum illo asperiores perferendis, excepturi sequi laborum voluptas cupiditate? Eos alias nemo sed dicta rerum placeat ipsa voluptate obcaecati delectus dolorem provident modi aliquid, qui minima cumque molestias.
+    <div class="d1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, possimus?
+    </div>
+    <div class="d1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, possimus?
+    </div>
+    <div class="d2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab beatae id ratione provident iure voluptatibus!
+    </div>
+    <div class="sidenav">
+        <a href="#" class="home"></a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+    </div>
+</body>
+</html>
